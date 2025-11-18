@@ -3,12 +3,9 @@ package ru.job4j.gc.leak.models;
 import java.util.List;
 import java.util.Objects;
 
-@SuppressWarnings("unused")
 public class Post {
     private int id;
-
     private String text;
-
     private List<Comment> comments;
 
     public int getId() {
@@ -19,16 +16,8 @@ public class Post {
         this.id = id;
     }
 
-    public String getText() {
-        return text;
-    }
-
     public void setText(String text) {
         this.text = text;
-    }
-
-    public List<Comment> getComments() {
-        return comments;
     }
 
     public void setComments(List<Comment> comments) {

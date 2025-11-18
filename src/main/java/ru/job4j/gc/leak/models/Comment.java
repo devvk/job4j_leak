@@ -2,22 +2,12 @@ package ru.job4j.gc.leak.models;
 
 import java.util.Objects;
 
-@SuppressWarnings("unused")
 public class Comment {
     private String text;
-
     private User user;
-
-    public User getUser() {
-        return user;
-    }
 
     public void setUser(User user) {
         this.user = user;
-    }
-
-    public String getText() {
-        return text;
     }
 
     public void setText(String text) {
